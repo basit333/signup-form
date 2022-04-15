@@ -1,0 +1,267 @@
+:root {
+  --color-bg-primary: #ff7979;
+  --color-primary: #ffffff;
+  --color-secondary: #3d3b48;
+  --color-title: #5e54a4;
+  --color-btn: #38cc8b;
+  --color-btn-hover: #77e2b3;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--color-bg-primary);
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 100%;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../images/bg-intro-desktop.png);
+}
+
+.intro-component-container {
+  min-width: 1110px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.component-left {
+  max-width: 525px;
+  padding: 0 20px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.left-section-heading {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 55px;
+  letter-spacing: -0.520833px;
+  color: var(--color-primary);
+  margin: 0 0 30px 0;
+}
+
+.left-section-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--color-primary);
+}
+
+.component-right {
+  max-width: 540px;
+}
+
+.right-title {
+  max-width: 100%;
+  background: var(--color-title);
+  box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+  border-radius: 10px;
+  padding: 17px 0;
+  margin: 0 0 41px 0;
+  text-align: center;
+}
+
+.right-heading {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.267857px;
+  color: var(--color-primary);
+}
+
+.right-form {
+  max-width: 100%;
+  background: var(--color-primary);
+  box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+  border-radius: 10px;
+  padding: 40px;
+}
+
+.form-content {
+  max-width: 460px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.form-content input {
+  max-width: 100%;
+  background: var(--color-primary);
+  border: 1px solid #dedede;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 15px 20px 15px 32px;
+  outline: none;
+  margin: 0 0 20px 0;
+}
+
+.form-content input::placeholder {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 0.25px;
+  color: var(--color-secondary);
+  opacity: 0.7;
+}
+
+.form-btn {
+  background: #38cc8b;
+  box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 26px;
+  letter-spacing: 1px;
+  color: var(--color-primary);
+  text-decoration: none;
+  padding: 15px 0;
+  text-align: center;
+  margin: 0 0 8px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.form-btn:hover {
+  background: var(--color-btn-hover);
+}
+
+.footer-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 26px;
+  text-align: center;
+  color: #bab7d4;
+}
+
+.text-orange {
+  color: var(--color-bg-primary);
+}
+
+@media screen and (max-width: 1110px) {
+  .intro-component-container {
+    min-width: 1024px;
+  }
+
+  .component-left {
+    max-width: 480px;
+  }
+
+  .component-right {
+    max-width: 520px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .intro-component-container {
+    min-width: 992px;
+  }
+
+  .component-left {
+    max-width: 450px;
+  }
+
+  .component-right {
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .intro-component-container {
+    min-width: 820px;
+  }
+
+  .component-left {
+    max-width: 400px;
+  }
+
+  .component-right {
+    max-width: 450px;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .intro-component-container {
+    min-width: 768px;
+  }
+
+  .component-left {
+    max-width: 350px;
+  }
+
+  .component-right {
+    max-width: 380px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    height: auto;
+    background: url(../images/bg-intro-mobile.png) no-repeat;
+    background-position: center;
+  }
+
+  .intro-component-container {
+    min-width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 80px 0;
+  }
+
+  .component-left {
+    max-width: 327px;
+    padding: 0;
+    margin: 0 0 64px 0;
+  }
+
+  .left-section-heading {
+    font-size: 28px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: -0.291667px;
+  }
+
+  .left-section-text {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+  }
+
+  .component-right {
+    max-width: 327px;
+  }
+
+  .right-title {
+    padding: 18px 67px;
+  }
+
+  .right-heading {
+    font-size: 15px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.267857px;
+  }
+
+  .form-content input {
+    padding: 15px 10px 15px 20px;
+  }
+}
